@@ -6,11 +6,11 @@ from typing import List
 
 
 def convert_to_absolute() -> float:
-    mon_nombre = input("Entrez un nombre : ")
-    if mon_nombre >= 0:
-        print(mon_nombre)
-    else:
-        print(-1 * mon_nombre)
+    mon_nombre = float(input("Entrez un nombre : "))
+    if mon_nombre < 0:
+        mon_nombre = -mon_nombre
+    return mon_nombre
+
 
 
 
