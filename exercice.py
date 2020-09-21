@@ -6,7 +6,12 @@ from typing import List
 
 
 def convert_to_absolute() -> float:
-    return 0.0
+    mon_nombre = input("Entrez un nombre : ")
+    if mon_nombre >= 0:
+        print(mon_nombre)
+    else:
+        print(-1 * mon_nombre)
+
 
 
 def use_prefixes() -> List[str]:
@@ -36,7 +41,7 @@ def main() -> None:
 
     number = 10
     print(f"La factiorelle du nombre {number} est: {factorial(number)}")
-    
+
     print(f"L'affichage de la boucle est:")
     use_continue()
 
