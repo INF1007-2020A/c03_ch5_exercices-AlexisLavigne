@@ -35,12 +35,15 @@ def prime_integer_summation() -> int:
     return sommes
 
 def factorial(number: int) -> int:
-    return 0
-
+    nombre = float(input("Entrez un nombre : ")
+    factorielle = factorial(nombre)
+    return factorielle
 
 def use_continue() -> None:
-    pass
-
+   for chiffre in range(1,11):
+       if chiffre == 5:
+           continue
+        print(chiffre)
 
 def main() -> None:
     print(f"La valeur absolue du nombre est {convert_to_absolute()}")
